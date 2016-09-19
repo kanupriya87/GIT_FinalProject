@@ -88,3 +88,11 @@ $('.city-list_1 li').not('.state').on('click', function () {
 
 	
 });
+
+// Media Query//
+
+
+$('.hamburger').on ('click', function() {
+	$('#tabs').toggleClass('open');
+
+});
