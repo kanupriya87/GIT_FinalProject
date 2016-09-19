@@ -23,9 +23,6 @@ body {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
     margin: 0 0 100px;
-     /* bottom = footer height */
-     -webkit-font-smoothing: antialiased;
-
 }
 
  header {
@@ -46,15 +43,13 @@ section {
 }
 
 footer {
-    /* clear: both; */
-    /* position: fixed; */
     width:  100%;
     margin-bottom: 0;
     background-color: black;
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 60px;
+    height:  60px;
 }
 
 #socialIcons img { 
@@ -73,7 +68,6 @@ img {
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
-    /* height: auto; */
     width: 160px;
 }
 
@@ -94,6 +88,12 @@ nav a {
     font-family: 'Nunito', sans-serif;
 }
 
+.about-img {
+    width: 70%;
+    position: absolute;
+    left: 15%;
+
+}
 
 
 /* contact page */
@@ -231,14 +231,17 @@ img.zumba {
 .cityinfo {
     float: left;
     width: 10%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .information-container {
     min-height: 10px;
 }
+.information-container_1 {
+    min-height: 75px;
+}
 
-.city-list {
+.city-list, .city-list_1 {
     cursor: pointer;
 }
 .state {
