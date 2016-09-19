@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bollywood Dance Studio</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="logo">
+      <img src="images/kplogo2.jpg" alt="logo">
+    </div>
+    <div id="tabs">
+      <nav>
+        <a href="about.html">About</a>
+        <a href="dance.html">Dance</a>
+        <a href="fitness.html">Fitness</a>
+        <a href="studio.html">Studio</a>
+        <a href="tour.html">Tour</a>
+        <a href="contact.html">Contact</a>
+
+      </nav>
+    </div>
+
+
+  </header>
+
+  <section>
+   <div class="studio">
+     <img src="images/fitness.jpg" alt="zumba" class="zumba">
+   </div>
+
+   <article id="one" class="clearfix">
+    <div class="city-list">
+      <ul>
+        <li  class="state">California:</li>
+        <li data-city="sf">San Francisco</li>
+        <li data-city="sacramento">Sacramento</li>
+        <li data-city="fremont">Fremont</li>
+        <li data-city="mountain">Mountain View</li>
+        <li data-city="wc">Walnut Creek</li>
+      </ul>
+    </div>
+  </article>
+
+  <div class="information-container"></div> 
+
+  <article id="two" class="clearfix">
+    <div class="city-list">
+      <ul>
+        <li class="state">Texas:</li>
+        <li data-city="dallas">Dallas</li>
+        <li data-city="houston">Houston</li>
+      </ul>
+    </div>
+  </article>
+
+   <!--  <div class="information-container"></div> -->
+
+</section>
+
+
+
+<footer>
+  <div id="socialIcons">
+    <a href="http://facebook.com">
+      <img title="Facebook" alt="Facebook" src="images/facebook.png" >
+    </a>
+    <a href="http://instagram.com">
+      <img title="instagram" alt="instagram" src="images/instagram.png" ></a>
+      <a href="http://youtube.com">
+        <img title="youtube" alt="youtube" src="images/youtube.png" ></a>
+        <a href="http://snapchat.com">
+          <img title="snapchat" alt="snapchat" src="images/snapchat.png" ></a>
+          <a href="http://twitter.com">
+            <img title="twitter" alt="twitter" src="images/twitter.png" ></a>
+          </div>
+        </footer>
+
+  <script id="info-template" type="text/x-handlebars-template">
+    <div class="cityinfo">
+      <p>City:</p>
+      <p>{{city}}</p>
+    </div>
+    <div class="cityinfo">
+      <p>Location:</p>
+      <p>{{location}}</p>
+    </div>
+    <div class="cityinfo">
+      <p>Day:</p>
+      <p>{{day}}</p>
+    </div>
+    <div class="cityinfo">
+      <p>Time:</p>
+      <p>{{time}}</p>
+    </div>
+  </script>
+
+
+
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
+  <!-- Step 1: Add handlebars library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="js/main.js"></script>
+
+   </body>
+   </html>
+
+
+
+
+
