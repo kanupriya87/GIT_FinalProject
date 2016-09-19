@@ -49,6 +49,8 @@ var houston = {
 
 // When user clicks on li in .city-list
 $('.city-list li').not('.state').on('click', function () {
+    $('.information-container').html('');
+    $('.information-container_1').html('');
 	var cityName = $(this).data('city');
 
 	var source   = $("#info-template").html();
@@ -61,6 +63,27 @@ $('.city-list li').not('.state').on('click', function () {
 	informationContainer.fadeOut(150, function () {
 		informationContainer.html(htmlToAdd);
 		informationContainer.fadeIn(300);
+	});
+
+	
+});
+
+$('.city-list_1 li').not('.state').on('click', function () {
+    $('.information-container').html('');
+    $('.information-container_1').html('');
+	var cityName = $(this).data('city');
+
+	var source   = $("#info-template").html();
+	var template = Handlebars.compile(source);
+	var context = window[cityName];
+	var htmlToAdd = template(context);
+
+	var informationContainer = $('.information-container_1');
+
+	informationContainer.fadeOut(150, function () {
+		informationContainer.html(htmlToAdd);
+		informationContainer.fadeIn(300);
+         console.log($('.information-container_1'));
 	});
 
 	
