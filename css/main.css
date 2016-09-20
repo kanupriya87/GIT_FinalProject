@@ -27,7 +27,6 @@ body {
 
  header {
     width:  100%;
-    /* height: 25%; */
 } 
 
   .container1 {
@@ -38,18 +37,17 @@ body {
 section {
     width: 100%;
     clear: both;
-    /* height: 65%;
-    overflow: hidden; */
 }
 
 footer {
-    width:  100%;
+    width: 100%;
     margin-bottom: 0;
     background-color: black;
     position: absolute;
     left: 0;
     bottom: 0;
-    height:  60px;
+    height: 60px;
+    clear: both;
 }
 
 #socialIcons img { 
@@ -88,11 +86,11 @@ nav a {
     font-family: 'Nunito', sans-serif;
 }
 
+
 .about-img {
     width: 70%;
     position: absolute;
     left: 15%;
-
 }
 
 
@@ -202,6 +200,7 @@ li {
     line-height: 24px;
     float: left; 
     padding: 0 10px 0 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -248,15 +247,92 @@ img.zumba {
     cursor: not-allowed;
 }
 
-/* Media query */
-/* .hamburger {
-    
-    display: none;
+
+
+/* Tour Page */
+
+#city1, #city2 {
+    background-color: white;
+    color: black;
 }
 
+.city {
+    margin: 5px 0 5px 0;
+}
 
-@media only screen and (max-width: 550px) {
+.date{
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+}
+
+#map {
+        width: 75%;
+        height: 60vh;
+        min-height: 400px;
+        margin: auto;
+      }
+
+/* Media query */
+
+
+
+@media only screen and (max-width: 618px) {
     .hamburger {
-        display: inline-block;
+        display: block;
+        padding: 15px;
+        cursor: pointer;
     }
-} */
+
+    .line {
+        border-bottom: 4px solid #7A5C2F;
+        width:  35px;
+        margin-bottom: 6px;
+    }
+
+    .line:last-child {
+        margin-bottom: 0;
+    }
+
+    nav a {
+        width: 50%;
+    }
+
+    .tabs {
+       /*  display: none; */
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s;
+    }
+
+    .open {
+        height: 300px;
+    }
+    
+    h1 {
+        margin-left: 90px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    button {
+        width: inherit;
+    }
+
+    select {
+        border: 1px solid #7A5C2F;
+        color: grey;
+    }
+
+    .city-list li, .city-list_1 li {
+        float: none;
+        font-size: 16px;
+    }
+
+    .cityinfo {
+        float: none;
+        width: 100%;
+    }
+}

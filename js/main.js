@@ -1,3 +1,14 @@
+
+$('.hamburger').on ('click', function() {
+	$('.tabs').toggleClass('open');
+
+});
+
+
+
+
+
+
 var sf = {
 	city: 'San Francisco',
 	location: '255 Bush Street',
@@ -88,3 +99,5 @@ $('.city-list_1 li').not('.state').on('click', function () {
 
 	
 });
+
+
