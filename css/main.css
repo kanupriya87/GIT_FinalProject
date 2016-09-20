@@ -17,19 +17,16 @@ html {
     background-color: black;
     position: relative;
     min-height: 100%;
-    height: 100%;
 }
 
 body {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
     margin: 0 0 100px;
-    height: 100%;
 }
 
  header {
     width:  100%;
-    /* height: 25%; */
 } 
 
   .container1 {
@@ -40,8 +37,6 @@ body {
 section {
     width: 100%;
     clear: both;
-    height: 65%;
-    /* overflow: hidden; */
 }
 
 footer {
@@ -91,11 +86,11 @@ nav a {
     font-family: 'Nunito', sans-serif;
 }
 
+
 .about-img {
     width: 70%;
     position: absolute;
     left: 15%;
-
 }
 
 
@@ -205,6 +200,7 @@ li {
     line-height: 24px;
     float: left; 
     padding: 0 10px 0 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -270,12 +266,18 @@ img.zumba {
     font-size: 12px;
 }
 
+#map {
+        width: 75%;
+        height: 60vh;
+        min-height: 400px;
+        margin: auto;
+      }
 
 /* Media query */
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 618px) {
     .hamburger {
         display: block;
         padding: 15px;
@@ -293,17 +295,44 @@ img.zumba {
     }
 
     nav a {
-        width: 100%;
+        width: 50%;
     }
 
     .tabs {
-        /* display: none; */
+       /*  display: none; */
         height: 0;
         overflow: hidden;
         transition: height 0.3s;
     }
 
     .open {
-        height: 295px;
+        height: 300px;
+    }
+    
+    h1 {
+        margin-left: 90px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    button {
+        width: inherit;
+    }
+
+    select {
+        border: 1px solid #7A5C2F;
+        color: grey;
+    }
+
+    .city-list li, .city-list_1 li {
+        float: none;
+        font-size: 16px;
+    }
+
+    .cityinfo {
+        float: none;
+        width: 100%;
     }
 }
